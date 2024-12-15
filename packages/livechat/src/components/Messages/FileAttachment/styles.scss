@@ -28,12 +28,12 @@ $file-attachment-download-highlight-color: colors.$color-blue;
 		align-items: center;
 		flex-flow: row nowrap;
 
-		:focus,
-		&:hover {
-			.file-attachment__download-button {
-				color: var(--color, $file-attachment-download-highlight-color);
-			}
-		}
+		// :focus,
+		// &:hover {
+		// 	.file-attachment__download-button {
+		// 		color: var(--color, $file-attachment-download-highlight-color);
+		// 	}
+		// }
 	}
 
 	& &__title {
@@ -48,6 +48,7 @@ $file-attachment-download-highlight-color: colors.$color-blue;
 	}
 
 	& &__download-button {
-		color: $file-attachment-download-color;
+		// color: $file-attachment-download-color;
+		color: var(--color, $file-attachment-download-highlight-color);
 	}
 }

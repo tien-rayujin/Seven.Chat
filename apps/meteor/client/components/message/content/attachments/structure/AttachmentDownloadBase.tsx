@@ -11,7 +11,7 @@ const AttachmentDownloadBase = ({ title, href, disabled, ...props }: AttachmentD
 
 	return (
 		<Action
-			icon='cloud-arrow-down'
+			icon='arrow-down-box'
 			href={`${href}?download`}
 			title={disabled ? t('Download_Disabled') : t('Download')}
 			is='a'
@@ -19,6 +19,7 @@ const AttachmentDownloadBase = ({ title, href, disabled, ...props }: AttachmentD
 			rel='noopener noreferrer'
 			download={title}
 			disabled={disabled}
+			pressed
 			{...props}
 		/>
 	);
