@@ -13,6 +13,7 @@ export const useRoomFileActions = () => {
             icon: 'attachment',
             tabComponent: RoomFilesActions,
             order: 8,
+            featured: true
         }),
         []
     );
